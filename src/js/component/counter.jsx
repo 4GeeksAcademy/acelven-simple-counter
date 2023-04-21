@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
+import { ClockIcon } from 'lucide-react'
 
 
 const Counter = () => {
@@ -14,12 +13,13 @@ const Counter = () => {
   }, []);
 
   return (
+    <div className='background'>
     <div className="time">
       
-        {seconds} seconds have elapsed since loading.
-        <FontAwesomeIcon icon={icon({name: 'clock-nine', style: 'regular'})} />
-        <p style={{color: "white"}}>{seconds}</p>
+    <ClockIcon color="white" size={60} />{seconds} seconds have elapsed since loading.
+       
     </div>
+    </div> 
   );
 };
 

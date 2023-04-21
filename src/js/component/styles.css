@@ -8,4 +8,6 @@
     gap: 20px;
     height: 100vh;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  }
+    color: white;
+    background-color: black;
+}
